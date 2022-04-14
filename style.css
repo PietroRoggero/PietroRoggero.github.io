@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image:url('backx.gif');
+  background-size: cover;
+}
+
+
+
+span {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #FF1493;
+  font-size: 124px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+span::before {
+  content: "Roggi";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+span::after {
+  content: "Roggi";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+}
+div {
+  left: 12%;
+  transition: transform .2s;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-shadow: 0px 0px 0px #FF1493;
+}
+a {
+  color: black;
+  text-decoration-line: none;
+  vertical-align:middle;
+}
+div:hover{
+  transform: scale(1.5);
+  text-shadow: 2px 2px 0px #FF1493;
+}
+.box1 {
+  position: absolute;
+  top: 40%;
+}
+.box2 {
+  position: absolute;
+  top: 55%;
+}
+.box3 {
+  position: absolute;
+  top: 70%;
+}
+img {
+  vertical-align:middle;
+  width: 70px;
+  height: 70px;
+}
+/* ------ TELEFONO ---------   */
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:url('backy.gif');
+      background-size: cover;
+  }
+  span {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #FF1493;
+    font-size: 96px;
+    letter-spacing: 8px;
+    cursor: pointer;
+  }
+  div {
+    left: 12%;
+    transition: transform .2s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-shadow: 0px 0px 0px #FF1493;
+  }
+  a {
+    color: black;
+    text-decoration-line: none;
+    vertical-align:middle;
+  }
+  div:hover{
+    transform: scale(1.5);
+    text-shadow: 2px 2px 0px #FF1493;
+  }
+  .box1 {
+    position: absolute;
+    top: 20%;
+  }
+  .box2 {
+    position: absolute;
+    top: 30%;
+  }
+  .box3 {
+    position: absolute;
+    top: 40%;
+  }
+  img {
+    vertical-align:middle;
+    width: 60px;
+    height: 60px;
+  }
+}
