@@ -1,2 +1,2 @@
 # PietroRoggero.github.io
-Trying to host a site, nothing more
+Trying to host a card-site, nothing more
