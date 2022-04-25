@@ -71,7 +71,7 @@ span:hover:after {
 }
 div {
   left: 12%;
-  transition: transform .2s;
+  transition: transform .3s;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   text-shadow: 0px 0px 0px #FF1493;
